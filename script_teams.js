@@ -1,6 +1,7 @@
 function searchingTeam()
 {
     let input = document.getElementById("search_driver").value;
+    input = input.toLowerCase();
 
     getTeamData(input).then((dr)=>{
             const team = dr.MRData.ConstructorTable.Constructors[0];

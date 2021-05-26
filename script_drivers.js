@@ -2,6 +2,7 @@
 function searchingDriver()
 {
     let input = document.getElementById("search_driver").value;
+    input = input.toLowerCase();
 
     getDriverData(input).then((dr)=>{
             const drive = dr.MRData.DriverTable.Drivers[0];

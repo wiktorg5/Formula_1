@@ -1,6 +1,7 @@
 function searchingTrack()
 {
     let input = document.getElementById("search_driver").value;
+    input = input.replace(" ", "_").toLowerCase();
 
     getTrackData(input).then((dr)=>{
             const track = dr.MRData.CircuitTable.Circuits[0];
