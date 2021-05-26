@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>F1</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="teams_style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+  <script src="script_teams.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+  	<div class="logo"><span style="color:#b30000;">Formula</span><span style="color:white;">1</span></div>
+
+  	<nav class="navbar">
+  		<ul>
+  			<a href="index.html"><li>Home</li></a>
+  			<a href="drivers.html"><li>Drivers</li></a>
+  			<a href="teams.html"><li>Teams</li></a>
+  			<a href="tracks.html"><li>Tracks</li></a>
+  		</ul>
+  	</nav>
+
+  	<div class="content">
+  		<div class="search">
+              <span class="search_driver_text">Team Name:</span>
+
+                  <input id="search_driver" type="text">
+
+              <button id="search_driver_button" onclick="searchingTeam()">Search</button>
+          </div>
+          <div class="driver">
+              <span id="name"></span>
+              <span id="nationality"></span>
+              
+                <div style="clear: both;"></div>
+              
+          </div>
+  	</div>
+
+</div>
+
+  	<footer class="footer"></footer>
+
+  </div>
+</body>
+</html>
